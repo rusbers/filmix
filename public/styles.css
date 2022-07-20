@@ -24,3 +24,14 @@ main {
 footer {
   flex-shrink: 0;
 }
+
+fieldset {
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.a11y-hidden {
+  position: fixed;
+  transform: scale(0);
+}
