@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material';
 import FilmFilter from '../components/filmFilter';
+import { FilmsList } from '../components/filmList';
 
 function FilmList() {
   return (
@@ -9,9 +10,7 @@ function FilmList() {
           <FilmFilter />
         </Grid>
         <Grid item md={9}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eveniet dolorum
-          doloremque iusto provident dicta alias enim quam? Consequuntur aliquid quis libero
-          obcaecati ut eius vel ea, dolorum similique! Fuga?
+          <FilmsList />
         </Grid>
       </Grid>
     </>
