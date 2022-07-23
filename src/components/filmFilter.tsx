@@ -8,10 +8,11 @@ import {
   FormGroup,
   FormControlLabel,
   Checkbox,
-  Pagination,
   Typography,
+  Box,
 } from '@mui/material';
 import FormFieldset from './formFieldset';
+import { FilmsPagination } from './filmsPagination';
 import { checkboxes, releaseYears } from './filterData';
 
 function FilmFilter() {
@@ -20,7 +21,7 @@ function FilmFilter() {
   };
 
   return (
-    <>
+    <Box>
       <form onSubmit={handleSubmit}>
         <Grid container direction="column" rowSpacing={2} marginTop={0}>
           <Typography variant="h4" component="h2">
@@ -79,12 +80,12 @@ function FilmFilter() {
               </FormFieldset>
             </FormControl>
           </Grid>
-          <Grid item>
-            <Pagination count={50} siblingCount={0}></Pagination>
-          </Grid>
         </Grid>
       </form>
-    </>
+      <Box marginTop={2}>
+        <FilmsPagination />
+      </Box>
+    </Box>
   );
 }
 

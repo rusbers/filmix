@@ -1,11 +1,14 @@
+import { useContext } from 'react';
 import { Grid } from '@mui/material';
-import { filmsData } from './filmsData';
 import { FilmCard } from './filmCard';
+import { FilmListContext } from '../context';
 
 function FilmsList() {
+  const { currentPageFilmList } = useContext(FilmListContext);
+
   return (
     <Grid container component="ul" columns={{ md: 2 }} spacing={2}>
-      {filmsData.map((filmDataItem) => (
+      {currentPageFilmList.map((filmDataItem) => (
         <Grid
           item
           component="li"
