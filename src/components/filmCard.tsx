@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import { API } from '../api';
+import { API } from '../network/api';
 
 function FilmCard({
   posterPath,

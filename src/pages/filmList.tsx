@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Grid } from '@mui/material';
 import FilmFilter from '../components/filmFilter';
 import { FilmsList } from '../components/filmList';
-import { FilmListContext } from '../context';
+import { FilmListContext } from '../context/filmListContext';
 
 function FilmList() {
   const [currentPageFilmList, setCurrentPageFilmList] = useState([]);

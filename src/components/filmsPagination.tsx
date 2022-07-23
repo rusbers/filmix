@@ -1,7 +1,7 @@
 import { Pagination } from '@mui/material';
 import { useContext, useEffect, useState } from 'react';
 import { filmsData } from '../components/filmsData';
-import { FilmListContext } from '../context';
+import { FilmListContext } from '../context/filmListContext';
 
 function FilmsPagination() {
   const { setCurrentPageFilmList } = useContext(FilmListContext);

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Grid } from '@mui/material';
 import { FilmCard } from './filmCard';
-import { FilmListContext } from '../context';
+import { FilmListContext } from '../context/filmListContext';
 
 function FilmsList() {
   const { currentPageFilmList } = useContext(FilmListContext);

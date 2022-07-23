@@ -1,4 +1,4 @@
-import { IFilmData } from '../interfaces';
+import { IFilmData } from '../types/interfaces';
 
 const filmsData: Array<IFilmData> = [
   {

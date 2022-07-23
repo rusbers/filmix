@@ -1,4 +1,4 @@
-import { ICheckboxes } from '../interfaces';
+import { ICheckboxes } from '../types/interfaces';
 
 const checkboxes: Array<ICheckboxes> = [
   {
